@@ -17,7 +17,7 @@ class SpringSecurityApplicationTests {
 
 		User user = new User(4L, "Prakash@gmail.com", "Prakash123", "Prakash");
 
-		String token = jwtService.generateToken(user);
+		String token = jwtService.generateAccessToken(user) ;
 
 		System.out.println(token);
 
